@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/text_settings">
+
+        <ListPreference
+            android:defaultValue="#000000"
+            android:entries="@array/text_color_array"
+            android:entryValues="@array/text_color_array_values"
+                android:key="@string/text_name_color_key"
+            android:summary="@string/text_color_name_summary"
+            android:title="@string/text_color_name" />
+        <ListPreference
+            android:defaultValue="#000000"
+            android:entries="@array/text_color_array"
+            android:entryValues="@array/text_color_array_values"
+            android:key="@string/text_sec_name_color_key"
+            android:title="@string/text_color_sec_name"
+            app:summary="@string/text_color_name_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>
